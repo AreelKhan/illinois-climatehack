@@ -3,7 +3,7 @@ from functools import lru_cache
 from random import randrange
 from typing import Iterator, T_co
 
-import cv2
+#import cv2
 import numpy as np
 import torch
 import xarray as xr
@@ -281,9 +281,9 @@ class CustomDataset(Dataset):
     def __len__(self):
         return len(self.times) - 35
 
-
+"""
 class OSGBDataset(torch.utils.data.Dataset):
-    """TensorDataset with support of transforms."""
+    "TensorDataset with support of transforms."
 
     def __init__(self, path, coords_path="data/coords.npz", random_state=7):
 
@@ -354,3 +354,4 @@ class OSGBDataset(torch.utils.data.Dataset):
 
     def __len__(self):
         return len(self.times) - 35
+"""
